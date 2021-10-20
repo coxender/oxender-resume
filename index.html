@@ -5,61 +5,229 @@
             Chiara Oxender-Resume
         </title>
         <style>
-            h1{
-                float:left;
+            body {
+                margin:0px;
+                padding: 0px;
+                font-family: Garamond,serif,
             }
-            div{
-                margin-top:20px;
-                margin-bottom:0px;
-            }
-            table{
-                float:none;
-            }
-            img{
-                float:right;
-                width:100px;
+            img.profile{
                 border-radius:50%;
+                height: 150px;
+                margin:7%;
+                padding:16px;
             }
             div.header{
-                text-align:left;
+                position: absolute;
+                top: .75in;
+                left:20%;
+                right: 0px;
+                height:4cm;
+                z-index:9;
+                border-radius: 0 16px 16px 0;
+                background-color: rgb(208,190,185);
+                opacity:90%;
+                overflow:hidden;
             }
-            td{
-                padding: 2px 6px;
+            div.body-cards{
+                position:relative;
+                
+                z-index:9;
+                border-radius: 0 16px 16px 0;
+                background-color: rgb(208,190,185);
+                opacity:90%;
+                color:#2A2A33;
+                overflow:hidden;
             }
-            a:link, a:visited{
-                text-decoration: none;
-                color:black;
-            }
-            
-            a.hover{
+            div.card-top{
+                position:relative;
+                top:6cm;
+                float:left;
+                width:75%;
+                font-size:20pt;
+                padding: 0 .25in;
+                overflow:hidden;
                 
             }
-            
-        
+            p.card-text{
+                font-size:75%;
+                position:relative;
+                top:-20px;
+                
+            }
+            div.side{
+                position:fixed;
+                bottom:0px;
+                top:.75in;
+                left:0px;
+                z-index:10;
+                float:left;
+                width:2.2in;
+                background-image: linear-gradient( #2A2A33,#44445F);
+                overflow:hidden;
+                color:white;
+            }
+            div.nav{
+                position:fixed;
+                top: 0px;
+                left: 0px;
+                right: 0px;
+                height: .75in;
+                background-color: #2A2A33;
+                z-index:100;
+            }
+            div.nav > ul{
+                padding:0;
+                margin:0;
+                list-style-type: none;
+                position:relative;
+                left:2.2in
+            }
+            div.nav a{
+                background-color: red;
+                display:inline;
+            }
+            .inline{
+                display:inline;
+
+            }
+            .inline > a{
+                display:block;
+                padding:.25in;
+                background-color: inherit;
+            }
+            div.nonNav{
+                
+                position: fixed;
+                top: .75in;
+                bottom: 0px;
+                z-index:1;
+                background-color:lightgrey;
+            }
+            div.body{
+                position:absolute;
+                top: .5in;
+                bottom: 0px;
+                left: 2.1in;
+                right: 0px;
+                background-image: url('office.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-color: rgb(247,247,247);
+            }
+            h1.title{
+                font-size:60pt;
+                margin:3%;
+                color:#2A2A33;
+            }
+            .center{
+                text-align:center;
+                float:none;
+            }
+            a:link, a:visited{
+                color:white;
+                font-weight:bold;
+                padding:1cm;
+                font-size:125%
+            }
+            hr{
+
+            }
+            .sideitem{
+                background-color:rgb(39, 31, 31);
+                padding: 1%;
+                margin:auto;
+                border-radius:5px;
+            }
+            .weight {
+                height: 5px;
+                width: 5px;
+                background-color: rgb(255, 255, 255);
+                border-radius: 50%;
+                margin:auto;
+            }
+            .links{
+                width:inherit;
+                position: absolute;
+                bottom:1cm;
+                margin:auto;
+            }
+            .bottom-credit{
+                position:absolute;
+                bottom:0px;
+                right: 0px;
+                color:#2A2A33;
+            }
         </style>
     </head>
     <body>
-        <div class="header">
-            <h1>Chiara Oxender</h1><img src='https://emu-wics.github.io/WebsiteNight/assets/images/sampleProfilePhoto.jpeg' alt"profile picture">
-            <table>
-                <tr>
-                    <td>Email: </td><td>chiara.oxender@gmail.com</td>
-                </tr>
-                <tr>
-                    <td>Phone: </td><td>(734) 796-5115</td>
-                </tr>
-                <tr>
-                    <td>Connections: </td><td><a href="https://www.linkedin.com/in/chiara-oxender-15a554201/" target="_blank">LinkedIn</a></td>
-                </tr>
-                <tr>
-                    <td></td><td><a href="https://github.com/coxender" target="_blank">GitHub</a></td>
-                </tr>
-            </table>
-            
+        <div class="nav">
+           <ul>
+                <li class="inline"><a href="#">Home</a></li>
+                <li class="inline"><a href="#">Resume</a></li>
+                <l1 class="inline"><a href="#">Projects</a></l1>
+            </ul>
         </div>
-        <hr>
-        <div>
+    
+            <div class="header" >
+                
+                <h1 class="title">Chiara Oxender</h1>
+                <br>
+                
+            </div>
+
+            <div class="side">
+                
+                <img class="profile" src='https://emu-wics.github.io/WebsiteNight/assets/images/sampleProfilePhoto.jpeg' alt="profile picture">
+                <h3 class="center">Connect with Me<h3></h3>
+                <table class="sideitem">
+                    <tr>
+                        <td>Email: </td><td>chiara.oxender@gmail.com</td>
+                    </tr>
+                </table>
+        
+                <div class="center links">
+                    <a href="https://www.linkedin.com/in/chiara-oxender-15a554201/" target="_blank">LinkedIn</a><br>
+                    <br>
+                    <div class="weight"></div>
+                    <br>
+                    <a href="https://github.com/coxender" target="_blank">GitHub</a><br>
+                    <br>
+                    <div class="weight"></div>
+                    <br>
+                    <a href="https://emich.joinhandshake.com/users/7020511" target="_blank">Handshake</a><br>
+                </div>
+            </div>
+
+            <div class="body">
+                <div class="body-cards card-top">
+                    <h4>About Me</h4>
+                    
+                    <p class="card-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo  
+                    </p>
+                </div>
+                <div class="bottom-credit">
+                    Photo from Unsplash
+                </div>
+            </div>
+            <!--
+            <div>
+                <table>
+                    <tr>
+                        <td>Email: </td><td>chiara.oxender@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Phone: </td><td>(734) 796-5115</td>
+                    </tr>
+                    <tr>
+                        <td>Connections: </td><td><a href="https://www.linkedin.com/in/chiara-oxender-15a554201/" target="_blank">LinkedIn</a></td>
+                    </tr>
+                    <tr>
+                        <td></td><td><a href="https://github.com/coxender" target="_blank">GitHub</a></td>
+                    </tr>
+                </table>
             
-        </div>
+            </div> -->
+         </div>
     </body>
 </html>
