@@ -1,3 +1,6 @@
+  :root{
+      --main:rgb(208,190,185);
+  }
   body {
                 margin:0px;
                 padding: 0px;
@@ -14,19 +17,20 @@
                 top: 1cm;
                 left: 0px;
                 right: 0px;
-                margin-bottom:1cm;
+                margin-bottom:1.5cm;
                 z-index:9;
                 border-radius: 0 16px 16px 0;
-                background-color: rgb(208,190,185);
+                background-color: var(--main);
                 opacity:90%;
                 overflow:hidden;
             }
             div.body-cards{
                 position:relative;
-                margin-top:1cm;
+                margin-top:.5cm;
+                margin-bottom:.5cm;
                 z-index:9;
                 border-radius: 0 16px 16px 0;
-                background-color: rgb(208,190,185);
+                background-color: var(--main);
                 opacity:90%;
                 color:#2A2A33;
                 overflow:hidden;
@@ -211,5 +215,5 @@
             .skill{
                 width: inherit;
                 position:relative;
-                padding-left:.5cm;
+                padding-right:.5cm;
             }
