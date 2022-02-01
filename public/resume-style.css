@@ -1,3 +1,6 @@
+  :root{
+      --main:rgb(208,190,185);
+  }
   body {
                 margin:0px;
                 padding: 0px;
@@ -14,19 +17,20 @@
                 top: 1cm;
                 left: 0px;
                 right: 0px;
-                margin-bottom:1cm;
+                margin-bottom:1.5cm;
                 z-index:9;
                 border-radius: 0 16px 16px 0;
-                background-color: rgb(208,190,185);
+                background-color: var(--main);
                 opacity:90%;
                 overflow:hidden;
             }
             div.body-cards{
                 position:relative;
-                margin-top:1cm;
+                margin-top:.5cm;
+                margin-bottom:.5cm;
                 z-index:9;
                 border-radius: 0 16px 16px 0;
-                background-color: rgb(208,190,185);
+                background-color: var(--main);
                 opacity:90%;
                 color:#2A2A33;
                 overflow:hidden;
@@ -40,7 +44,7 @@
                 overflow:hidden;
                 
             }
-            p.card-text{
+            .card-text{
                 font-size:75%;
                 position:relative;
                 top:-20px;
@@ -79,6 +83,7 @@
                 top:1cm;
                 background-color:  #2A2A33;
                 display:inline;
+                font-size:18pt;
                 
             }
             div.nav a:visited, div.nav a:link{
@@ -86,7 +91,7 @@
             }
             div.nav a:hover {
                 background-color:#44445F;
-                font-size:20px;
+                
                 transition: background-color 2s;
             }
             .inline{
@@ -113,7 +118,7 @@
                 left: 2.1in;
                 right: 0px;
                 height:fit-content;
-                background-image: url('office.jpg');
+                background-image: url('images/office.jpg');
                 background-position: center;
                 background-repeat:repeat-y;
                 background-size: cover;
@@ -133,14 +138,12 @@
                 color:white;
                 font-weight:bold;
                 padding:1cm;
-                font-size:125%
-            }
-            hr{
-
+                font-size:100%
             }
             .sideitem{
                 position:absolute;
                 bottom:16px;
+                left:.75cm;
                 padding: 8px;
                 margin:auto;
                 border-radius:5px;
@@ -164,7 +167,7 @@
                 color:#2A2A33;
             }
             a:hover{
-                font-size:130%;
+                font-size:110%;
             }
             .tiny{
                 font-size:18px;
@@ -202,4 +205,15 @@
             }
             .right{
                 text-align: right;
+            }
+            ul{
+                font-size:75%;
+                margin-top:8px;
+                padding-top:8px;
+                list-style-type: circle;
+            }
+            .skill{
+                width: inherit;
+                position:relative;
+                padding-right:.5cm;
             }
